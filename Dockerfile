@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copier seulement les fichiers du répertoire src_api et le modèle
 COPY src_api /app/src_api
-COPY src/LoanApprovalClassifier_model.pkl /app/src/
+COPY Octroi_credit_classification_model.pkl /app/
 
 # Exposer le port 8000 pour FastAPI
 EXPOSE 8000
